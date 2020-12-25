@@ -1,0 +1,197 @@
+{
+  "id": "453597cc-14fe-4ec1-93c8-39f97bd58463",
+  "version": "2.0",
+  "name": "scouter-github",
+  "url": "http://localhost/posts",
+  "tests": [{
+    "id": "ae65d172-2b5f-4580-b172-2b7e3ca2e51a",
+    "name": "test2",
+    "commands": [{
+      "id": "08172c4f-d6f0-48fe-afee-6c46da0303be",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/posts",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a1d954c-81f5-4533-8668-deebd8b42370",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f81d0d5-e043-4bf2-8194-5424cecf2b80",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > td:nth-child(3) > a",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'新規作成')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/posts/create')])[3]", "xpath:href"],
+        ["xpath=//tr[4]/td[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cc373ae-a45a-4fb1-ae5b-1dd9016eb2de",
+      "comment": "",
+      "command": "click",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "702eaa37-1cea-484a-a368-a96cf872fa3d",
+      "comment": "",
+      "command": "type",
+      "target": "name=title",
+      "targets": [
+        ["name=title", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='title']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Test title 4"
+    }, {
+      "id": "5da4db8c-5fd2-4fe2-b17d-3fad2eb98353",
+      "comment": "",
+      "command": "click",
+      "target": "name=body",
+      "targets": [
+        ["name=body", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='body']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "468126e7-ede3-4c32-bdc7-9884afa775c6",
+      "comment": "",
+      "command": "type",
+      "target": "name=body",
+      "targets": [
+        ["name=body", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='body']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "text 4"
+    }, {
+      "id": "c162078f-db6e-418b-adc1-f0d0ea831a26",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(4) > input",
+      "targets": [
+        ["css=div:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@value='送信']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0ec7b35-66cb-4dab-a056-dda927c113e3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(5) > td:nth-child(1)", "css:finder"],
+        ["xpath=//tr[5]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'Test title 4')]", "xpath:innerText"]
+      ],
+      "value": "Test title 4"
+    }]
+  }, {
+    "id": "15687a23-e913-4183-922e-c3d21b49c108",
+    "name": "test1",
+    "commands": [{
+      "id": "2b94009f-917e-4e19-aced-283363b68864",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/posts",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b637125-6838-4d68-a471-7b8e465f0cb3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc0b8c7d-8afd-4892-9ebd-5a9e7deca1bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=投稿の詳細",
+      "targets": [
+        ["linkText=投稿の詳細", "linkText"],
+        ["css=tr:nth-child(2) > td:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'投稿の詳細')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/posts/1')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'投稿の詳細')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19d7aa42-8e54-4d88-a82f-0a634b0df455",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Test title 1')]", "xpath:innerText"]
+      ],
+      "value": "Test title 1"
+    }, {
+      "id": "67cb4d12-76ad-4c00-9242-4bfeef0bfc3d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=投稿一覧へ戻る",
+      "targets": [
+        ["linkText=投稿一覧へ戻る", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'投稿一覧へ戻る')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/posts')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'投稿一覧へ戻る')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9aab2506-f1d6-452a-a84e-67d07f60751f",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > td:nth-child(4) > a",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'投稿の詳細')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/posts/2')]", "xpath:href"],
+        ["xpath=//tr[3]/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29cdf5d0-cade-4822-ac8f-b8b9d428a0a6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Test title 2')]", "xpath:innerText"]
+      ],
+      "value": "Test title 2"
+    }]
+  }],
+  "suites": [{
+    "id": "03bb82f0-14d9-46c3-82cc-7fda50487853",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ae65d172-2b5f-4580-b172-2b7e3ca2e51a"]
+  }],
+  "urls": ["http://localhost/posts"],
+  "plugins": []
+}
